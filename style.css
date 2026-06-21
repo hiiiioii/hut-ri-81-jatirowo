@@ -1,0 +1,148 @@
+:root {
+    --merah: #e63946;
+    --putih: #f1faee;
+    --gelap: #1d3557;
+    --abu: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--abu);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, var(--merah) 0%, #b71c1c 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 10px 0;
+    font-size: 1.8em;
+    border: none;
+    color: white;
+}
+
+header p {
+    margin: 10px 0 0 0;
+    font-size: 1.1em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--merah);
+    border-bottom: 2px solid var(--merah);
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    border-left: 4px solid var(--merah);
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: var(--merah);
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e8e8e8;
+}
+
+.btn-dana {
+    display: inline-block;
+    background-color: var(--merah);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-dana:hover {
+    background-color: #b71c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(230, 57, 70, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--gelap);
+    color: white;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h2 {
+        font-size: 1.3em;
+    }
+
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}

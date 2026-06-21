@@ -1,0 +1,3 @@
+# No additional files to ignore for static website
+.DS_Store
+Thumbs.db
